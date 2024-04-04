@@ -9,14 +9,12 @@ public class Notas {
 
     double uf1, uf2, uf3;
     double acu1, acu2, acu3, def;
-    // Utilizamos Scanner para poder introducir datos
     Scanner entrada = new Scanner(System.in);
 
     /**
      * Método para capturar las notas del usuario.
      */
     public void IngresaNotas() {
-        // Cuando ejecutamos este método, lo primero que queremos es que nos pida las notas
         System.out.println("Ingrese las notas del estudiante");
 
         System.out.print("Ingrese nota 1: ");
@@ -99,17 +97,12 @@ public class Notas {
      * @param args Argumentos de la línea de comandos (no utilizados en este caso).
      */
     public static void main(String[] args) {
-        // Creamos un mecanismo para llamar a cualquier método fuera de la clase
         Notas fc = new Notas();
         System.out.println("Ejecutando proceso...");
         fc.IngresaNotas();
         fc.comprobacion();
         fc.Calculonotas();
         fc.Mostrar();
-        fc.aprobado();
-        
-        
+        fc.aprobado();  
     }
-    
-    
 }
