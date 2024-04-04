@@ -101,10 +101,15 @@ public class Notas {
     public static void main(String[] args) {
         // Creamos un mecanismo para llamar a cualquier método fuera de la clase
         Notas fc = new Notas();
+        System.out.println("Ejecutando proceso...");
         fc.IngresaNotas();
         fc.comprobacion();
         fc.Calculonotas();
         fc.Mostrar();
         fc.aprobado();
+        
+        
     }
+    
+    
 }
